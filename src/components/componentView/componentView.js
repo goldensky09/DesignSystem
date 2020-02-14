@@ -22,10 +22,13 @@ export default class ComponentView extends React.Component {
     
     handleOk = e => {
         console.log(e);
+        let style = (this.state.tempStyle==="")?this.state.style:this.state.tempStyle;
+        style = JSON.parse(style.replace(/\n/g,''));
         this.setState({
             visible: false,
-            style: (this.state.tempStyle==="")?this.state.style:this.state.tempStyle
+            style
         });
+        this.props.onEdit(this.props.id,style);        
     };
     
     handleCancel = e => {
@@ -77,7 +80,7 @@ export default class ComponentView extends React.Component {
     }
 
     render() {
-        if(this.props.selectedComponent === '') {            
+        if(this.props.selectedComponent === '' || this.props.selectedComponent === undefined) {            
             return(<div className="componentView">Please select an atom element.</div>);
         }
         

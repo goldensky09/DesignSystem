@@ -1,5 +1,6 @@
 {"data":[	
 	{ 
+		"id":"1",
 		"type":"button",
 		"styles":{ 
 			"background-color":"rgb(51, 122, 183)",
@@ -22,6 +23,7 @@
 		]
 	},
 	{ 
+		"id":"2",
 		"type":"button",
 		"styles":{ 
 			"background-color":"#5cb85c",
@@ -44,9 +46,10 @@
 		]
 	},
 	{ 
+		"id":"3",
 		"type":"h1",
 		"styles":{ 
-		   "fontFamily":"UniversCondensed, Meiryo, \"Hiragino Kaku Gothic Pro\"",
+		   "fontFamily":"UniversCondensed, Meiryo, Hiragino Kaku Gothic Pro",
 		   "fontSize":"24px",
 		   "color":"#000000",
 		   "lineHeight":"24px",
@@ -57,9 +60,10 @@
 		]
 	},
 	{ 
+		"id":"4",
 		"type":"h2",
 		"styles":{ 
-		   "fontFamily":"UniversCondensed, Meiryo, \"Hiragino Kaku Gothic Pro\"",
+		   "fontFamily":"UniversCondensed, Meiryo, Hiragino Kaku Gothic Pro",
 		   "fontSize":"20px",
 		   "color":"#000000",
 		   "lineHeight":"20px",

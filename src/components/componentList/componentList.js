@@ -12,7 +12,7 @@ export default class ComponentList extends React.Component {
     renderMenuItems = (jsn) => {        
         const menuItem = jsn.map((item, index) => {
             const key = item.type + '_' + index;
-            return(<Menu.Item key={key} styleitem={item.styles} value={item.type} usage={item.usage}>{item.type}</Menu.Item>)
+            return(<Menu.Item key={key} styleitem={item.styles} id={item.id} value={item.type} usage={item.usage}>{item.type}</Menu.Item>)
         })
         return menuItem;
     }
